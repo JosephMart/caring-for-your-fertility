@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Route } from 'react-router';
-import { Home, About, Topics, TodoApp } from './containers/App/App';
-import RedditAsync from './containers/RedditAsync'
+import { Home } from './containers/Home';
+import { Calendar } from './containers/Calander';
 
 const routes = [
     {
@@ -13,31 +13,10 @@ const routes = [
         exact: true
     },
     {
-        path: '/todo',
-        component: TodoApp,
+        path: '/calendar',
+        component: Calendar,
         navVisible: true,
-        navText: 'Todo',
-        exact: true
-    },
-    {
-        path: '/about',
-        component: About,
-        navVisible: true,
-        navText: 'About',
-        exact: true
-    },
-    {
-        path: '/topics',
-        component: Topics,
-        navVisible: true,
-        navText: 'Topics',
-        exact: false
-    },
-    {
-        path: '/reddit',
-        component: RedditAsync,
-        navVisible: true,
-        navText: 'Reddit Async Example',
+        navText: 'Calendar',
         exact: true
     }
 ];
