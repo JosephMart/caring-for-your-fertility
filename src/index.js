@@ -14,16 +14,21 @@ import './index.css';
 const history = createHistory()
 
 // Build the middleware for intercepting and dispatching navigation actions
-const middleware = routerMiddleware(history)
+const middlewares = [];
+middlewares.push(routerMiddleware(history));
+
+if (process.env.NODE_ENV === 'development') {
+    const { logger } = require(`redux-logger`);
+    middlewares.push(logger);
+}
 
 const store = createStore(
     combineReducers({
         ...todoApp,
         router: routerReducer
     }),
-    applyMiddleware(middleware)
+    applyMiddleware(...middlewares)
 )
-
 
 ReactDOM.render(
     <Provider store={store}>
