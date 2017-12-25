@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Route } from 'react-router';
 import { Home } from './containers/Home';
-import { Calendar } from './containers/Calander';
+import { Calendar } from './containers/Calendar';
 
 const routes = [
     {

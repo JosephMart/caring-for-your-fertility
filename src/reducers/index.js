@@ -1,4 +1,7 @@
-const todoApp = {
+import calendar from './calendar'
+
+const appReducers = {
+    calendar
 }
 
-export default todoApp
+export default appReducers

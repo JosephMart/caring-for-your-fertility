@@ -730,3 +730,9 @@ a{
     }
 
 }
+
+.calendar-action div {
+    display: inline;
+    vertical-align: middle;
+    text-align: center;
+  }

@@ -10,7 +10,7 @@ import { Provider } from 'react-redux';
 import { ConnectedRouter, routerReducer, routerMiddleware } from 'react-router-redux';
 import { navComponents, routeComponents } from './routes';
 import thunkMiddleware from 'redux-thunk';
-import todoApp from './reducers';
+import appReducers from './reducers';
 import Logo from './img/logo.png';
 import './index.css';
 
@@ -29,7 +29,7 @@ if (process.env.NODE_ENV === 'development') {
 
 const store = createStore(
     combineReducers({
-        ...todoApp,
+        ...appReducers,
         router: routerReducer
     }),
     applyMiddleware(...middlewares)

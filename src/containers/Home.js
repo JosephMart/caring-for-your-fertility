@@ -1,8 +1,4 @@
 import React from 'react';
-import {
-  Route,
-  Link
-} from 'react-router-dom';
 
 export const Home = () => (
   <div>
@@ -23,7 +19,7 @@ export const Home = () => (
           <div className="details_exp">
             <h3>Excepteur sint.</h3>
             <p>Coccaecat cupidatat aliqu proident sunt in culpa qui officia deserunt mollit anim.</p>
-            <a href="#">more details<span>→</span></a>
+            <a href="">more details<span>→</span></a>
           </div>
         </div>
         <div className="feature">
@@ -33,7 +29,7 @@ export const Home = () => (
           <div className="details_exp">
             <h3>Excepteur sint.</h3>
             <p>Coccaecat cupidatat aliqu proident sunt in culpa qui officia deserunt mollit anim.</p>
-            <a href="#">more details<span>→</span></a>
+            <a href="">more details<span>→</span></a>
           </div>
         </div>
         <div className="feature">
@@ -43,7 +39,7 @@ export const Home = () => (
           <div className="details_exp">
             <h3>Excepteur sint.</h3>
             <p>Coccaecat cupidatat aliqu proident sunt in culpa qui officia deserunt mollit anim.</p>
-            <a href="#">more details<span>→</span></a>
+            <a href="">more details<span>→</span></a>
           </div>
         </div>
         <div className="feature">
@@ -53,7 +49,7 @@ export const Home = () => (
           <div className="details_exp">
             <h3>Excepteur sint.</h3>
             <p>Coccaecat cupidatat aliqu proident sunt in culpa qui officia deserunt mollit anim.</p>
-            <a href="#">more details<span>→</span></a>
+            <a href="">more details<span>→</span></a>
           </div>
         </div>
         <div className="feature">
@@ -63,7 +59,7 @@ export const Home = () => (
           <div className="details_exp">
             <h3>Excepteur sint.</h3>
             <p>Coccaecat cupidatat aliqu proident sunt in culpa qui officia deserunt mollit anim.</p>
-            <a href="#">more details<span>→</span></a>
+            <a href="">more details<span>→</span></a>
           </div>
         </div>
         <div className="feature">
@@ -73,7 +69,7 @@ export const Home = () => (
           <div className="details_exp">
             <h3>Excepteur sint.</h3>
             <p>Coccaecat cupidatat aliqu proident sunt in culpa qui officia deserunt mollit anim.</p>
-            <a href="#">more details<span>→</span></a>
+            <a href="">more details<span>→</span></a>
           </div>
         </div>
       </div>
@@ -118,7 +114,7 @@ export const Home = () => (
     <section className="cta">
       <h3>Take Action & buy your copy now!</h3>
       <p>excepteur sint occaecat cupidatat non proiden deserunt mollit anim laborum.</p>
-      <a href="#" className="cta_btn">Sign up now!</a>
+      <a href="" className="cta_btn">Sign up now!</a>
       <span className="cta_sep"></span>
     </section>
 
