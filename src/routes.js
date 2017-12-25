@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Route } from 'react-router';
 import { Home } from './containers/Home';
 import { Calendar } from './containers/Calendar';
+import { Event } from './containers/Event';
 
 const routes = [
     {
@@ -17,6 +18,12 @@ const routes = [
         component: Calendar,
         navVisible: true,
         navText: 'Calendar',
+        exact: true
+    },
+    {
+        path: '/event/:year/:month/:day',
+        component: Event,
+        navVisible: false,
         exact: true
     }
 ];

@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const Home = () => (
+export default () => (
   <div>
     <section className="billboard">
       <div className="wrapper">
@@ -108,7 +108,6 @@ export const Home = () => (
         <p>Magna aliqua ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
         <a href="">More Details <span>→</span></a>
       </div>
-
     </section>
 
     <section className="cta">
@@ -117,10 +116,5 @@ export const Home = () => (
       <a href="" className="cta_btn">Sign up now!</a>
       <span className="cta_sep"></span>
     </section>
-
-    <footer>
-      <img src="img/logo_footer.png" alt="Crafty" />
-      <p className="rights">Copyright © crafty - All rights reserved, Find more free templates at <a href="http://pixelhint.com">Pixelhint.com</a></p>
-    </footer>
   </div>
 )

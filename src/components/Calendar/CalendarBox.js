@@ -5,8 +5,8 @@ import PropTypes from 'prop-types';
 export default class CalendarBox extends PureComponent {
     static propTypes = {
         rows: PropTypes.arrayOf(PropTypes.arrayOf(PropTypes.shape({
-            num: PropTypes.number,
-            otherMonth: PropTypes.bool
+            num: PropTypes.number.isRequired,
+            otherMonth: PropTypes.bool.isRequired
         })))
     }
 

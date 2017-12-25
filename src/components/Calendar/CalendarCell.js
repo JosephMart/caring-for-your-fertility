@@ -1,6 +1,7 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
+import CalendarEvent from './CalendarEvent';
 
 export default class CalendarCell extends PureComponent {
     static propTypes = {
@@ -15,14 +16,7 @@ export default class CalendarCell extends PureComponent {
                 otherMonth: this.props.otherMonth
             })}>
                 <div className="date">{this.props.num}</div>
-                <div className="event">
-                    <div className="event-desc">
-                        HTML 5 lecture with Brad Traversy from Eduonix
-    						</div>
-                    <div className="event-time">
-                        1:00pm to 3:00pm
-    						</div>
-                </div>
+                <CalendarEvent />
             </li>
         );
     }

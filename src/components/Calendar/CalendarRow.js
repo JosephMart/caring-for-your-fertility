@@ -5,8 +5,8 @@ import PropTypes from 'prop-types';
 export default class CalendarRow extends PureComponent {
     static propTypes = {
         days: PropTypes.arrayOf(PropTypes.shape({
-            num: PropTypes.number,
-            otherMonth: PropTypes.bool
+            num: PropTypes.number.isRequired,
+            otherMonth: PropTypes.bool.isRequired
         })).isRequired
     }
 

@@ -1,7 +1,9 @@
-import calendar from './calendar'
+import calendar from './calendar';
+import events from './events';
 
 const appReducers = {
-    calendar
+    calendar,
+    events
 }
 
 export default appReducers
