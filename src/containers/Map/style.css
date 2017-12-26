@@ -1,0 +1,14 @@
+.map {
+    /* position: relative !important; */
+    /* padding-bottom: 0 !important; */
+    /* overflow: hidden; */
+    margin-bottom: 0 !important;
+    font-size: 50px;
+    text-align: center;
+    color: #6b6b6b;
+    font-family: "lato_bold", arial;
+    font-size: 34px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}

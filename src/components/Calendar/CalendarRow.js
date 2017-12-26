@@ -7,13 +7,14 @@ export default class CalendarRow extends PureComponent {
         days: PropTypes.arrayOf(PropTypes.shape({
             num: PropTypes.number.isRequired,
             otherMonth: PropTypes.bool.isRequired
-        })).isRequired
+        })).isRequired,
+        events: PropTypes.shape()
     }
 
     render() {
         return (
             <ul className="days">
-                {this.props.days.map(i => <CalendarCell key={i.num} {...i} />)}
+                {this.props.days.map(i => <CalendarCell key={i.num} {...i} event={this.props.events[i.otherMonth ? 'otherMonth' : 'currentMonth'][i.num]} />)}
             </ul>
         );
     }

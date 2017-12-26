@@ -6,7 +6,8 @@ import CalendarEvent from './CalendarEvent';
 export default class CalendarCell extends PureComponent {
     static propTypes = {
         num: PropTypes.number.isRequired,
-        otherMonth: PropTypes.bool.isRequired
+        otherMonth: PropTypes.bool.isRequired,
+        events: PropTypes.shape()
     }
 
     render() {
@@ -16,7 +17,7 @@ export default class CalendarCell extends PureComponent {
                 otherMonth: this.props.otherMonth
             })}>
                 <div className="date">{this.props.num}</div>
-                <CalendarEvent />
+                <CalendarEvent event={this.props.event} />
             </li>
         );
     }

@@ -4,6 +4,7 @@ import { Route } from 'react-router';
 import { Home } from './containers/Home';
 import { Calendar } from './containers/Calendar';
 import { Event } from './containers/Event';
+import { Info } from './containers/Info';
 
 const routes = [
     {
@@ -18,6 +19,13 @@ const routes = [
         component: Calendar,
         navVisible: true,
         navText: 'Calendar',
+        exact: true
+    },
+    {
+        path: '/info',
+        component: Info,
+        navText: 'Info',
+        navVisible: true,
         exact: true
     },
     {

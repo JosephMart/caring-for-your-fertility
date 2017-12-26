@@ -1,1 +1,2 @@
 export const CHANGE_MONTH = 'CHANGE_MONTH';
+export const GET_EVENTS_BY_MONTH = 'GET_EVENTS_BY_MONTH';

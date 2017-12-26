@@ -4,11 +4,12 @@ import { CalendarNav, CalendarBox } from '../../components/Calendar'
 import { connect } from 'react-redux';
 import './Calendar.css'
 import { changeMonth } from '../../actions/index';
-import { getCalendarNums } from '../../utils';
+import { getCalendarNums, getEventsByMonth } from '../../utils';
 
 class Calendar extends Component {
     static propTypes = {
-        calendar: PropTypes.shape().isRequired
+        calendar: PropTypes.shape().isRequired,
+        events: PropTypes.shape()
     }
 
     constructor(props) {
@@ -21,22 +22,26 @@ class Calendar extends Component {
     }
 
     render() {
-        const { calendar } = this.props;
+        const { calendar, monthEvents } = this.props;
+        console.log(monthEvents);
         return (
             <div id="calendar-wrap" className="wrapper">
                 <CalendarNav month={calendar.selectedMonth}
                     year={calendar.selectedYear}
                     changeMonth={this.changeMonth}
                 />
-                <CalendarBox rows={getCalendarNums(calendar)} />
+                <CalendarBox rows={getCalendarNums(calendar)}
+                    events={monthEvents} />
             </div>
         );
     }
 }
 
 const mapStateToProps = (state) => {
+    const { calendar, events } = state;
     return {
-        calendar: state.calendar
+        calendar,
+        monthEvents: getEventsByMonth(events, calendar.selectedYear, parseInt(calendar.currentMoment.format('MM'), 10))
     };
 }
 

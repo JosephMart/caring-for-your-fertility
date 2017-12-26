@@ -1,20 +1,25 @@
 import React, { PureComponent } from 'react';
+import PropTypes from 'prop-types';
 
 export default class CalendarEvent extends PureComponent {
     static propTypes = {
-
+        event: PropTypes.shape()
     }
 
     render() {
-        return (
-            <div className="event">
-                <div className="event-desc">
-                    HTML 5 lecture with Brad Traversy from Eduonix
-                </div>
-                <div className="event-time">
-                    1:00pm to 3:00pm
-                </div>
-            </div>
-        );
+        const { event } = this.props;
+        if (event) {
+            return (
+                <a className="event" href={event.link}>
+                    <div className="event-desc">
+                        {event.shortDesc}
+                    </div>
+                    <div className="event-time">
+                        {`${event.startTime} to ${event.endTime}`}
+                    </div>
+                </a>
+            );
+        }
+        return null;
     }
 }

@@ -7,7 +7,8 @@ export default class CalendarBox extends PureComponent {
         rows: PropTypes.arrayOf(PropTypes.arrayOf(PropTypes.shape({
             num: PropTypes.number.isRequired,
             otherMonth: PropTypes.bool.isRequired
-        })))
+        }))),
+        events: PropTypes.shape()
     }
 
     render() {
@@ -22,7 +23,7 @@ export default class CalendarBox extends PureComponent {
                     <li>Friday</li>
                     <li>Saturday</li>
                 </ul>
-                {this.props.rows.map((row, i) => <CalendarRow days={row} key={i} />)}
+                {this.props.rows.map((row, i) => <CalendarRow days={row} key={i} events={this.props.events} />)}
             </div>
         );
     }

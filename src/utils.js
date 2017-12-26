@@ -24,3 +24,31 @@ export const getCalendarNums = ({ firstDayIndex = -1, daysInCurrentMonth = -1, d
     }
     return rows;
 }
+
+export const getEventsByMonth = (events, year, m) => {
+    const prevMonth = m === 1 ? 12 : m - 1;
+    const nextMonth = m === 12 ? 1 : m + 1;
+    const acceptable = [...Array(31).keys()].map((x, i) => (`${year}-${m}-${i + 1}`));
+    acceptable.push(...[...Array(31).keys()].map((x, i) => (`${prevMonth === 12 ? year - 1 : year}-${prevMonth}-${i + 1}`)));
+    acceptable.push(...[...Array(31).keys()].map((x, i) => (`${nextMonth === 1 ? year + 1 : year}-${nextMonth}-${i + 1}`)));
+    const found = {
+        currentMonth: {},
+        otherMonth: {}
+    };
+    let month = -1;
+    let day = -1;
+
+    Object.keys(events).map(key => {
+        if (acceptable.includes(key)) {
+            month = key.substring(key.length - 5, key.length - 3);
+            day = key.substring(key.length - 2);
+            if (parseInt(month, 10) === m) {
+                found.currentMonth = Object.assign({}, found.currentMonth, { [day]: events[key] });
+            } else {
+                found.otherMonth = Object.assign({}, found.otherMonth, { [day]: events[key] });
+            }
+        }
+        return key;
+    })
+    return found;
+}
