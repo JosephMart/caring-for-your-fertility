@@ -1,6 +1,7 @@
 import React, { PureComponent } from 'react';
 import CalendarCell from './CalendarCell';
 import PropTypes from 'prop-types';
+import { pad } from '../../utils';
 
 export default class CalendarRow extends PureComponent {
     static propTypes = {
@@ -14,7 +15,7 @@ export default class CalendarRow extends PureComponent {
     render() {
         return (
             <ul className="days">
-                {this.props.days.map(i => <CalendarCell key={i.num} {...i} event={this.props.events[i.otherMonth ? 'otherMonth' : 'currentMonth'][i.num]} />)}
+                {this.props.days.map(i => <CalendarCell key={i.num} {...i} event={this.props.events[i.otherMonth ? 'otherMonth' : 'currentMonth'][pad(i.num)]} />)}
             </ul>
         );
     }

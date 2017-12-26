@@ -98,12 +98,20 @@ export default class Info extends Component {
                         roots in the CREIGHTON MODEL {FertilityCare}{tradeMark} System, Physicians, Nurse Practitioners, Physician Assistants and
                         Midwives can assist women with infertility, repeated miscarriages, PMS, Ovarian cysts, menopause, and a variety of reproductive issues. The standardized charting provides a tool to identify indicators of problems. When these are identified treatments can be prescribed that are founded in an understanding of what is actually occurring in the woman's cycle.
                     </p>
+
+                    <h2>Couples report that the FertilityCare System benefits the relationship</h2>
+                    <p>Couples report an increase in communication and a growth in the</p>
+                    <p><b>S</b>piritual</p>
+                    <p><b>P</b>hysical</p>
+                    <p><b>I</b>ntellectual,</p>
+                    <p><b>C</b>ommunicative/ Creative</p>
+                    <p><b>E</b>motional dimensions their sexuality and relationship.</p>
                     <div className="center">
                         <h3>For more information on the</h3>
                         <h3>CREIGHTON MODEL</h3>
                         <h3>FertilityCare System go to:</h3>
-                        <h3><a href="www.fertilitycare.org">www.fertilitycare.org</a></h3>
-                        <h3><a href="www.creightonmodel.com">www.creightonmodel.com</a></h3>
+                        <h3><a href="http://www.fertilitycare.org" target="__blank">www.fertilitycare.org</a></h3>
+                        <h3><a href="http://www.creightonmodel.com" target="__blank">www.creightonmodel.com</a></h3>
                     </div>
                 </div>
             </section>

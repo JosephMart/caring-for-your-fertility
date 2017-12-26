@@ -34,7 +34,7 @@ export default class Header extends Component {
         return (
             <header>
                 <div className="wrapper">
-                    <img src={Logo} alt="Crafty" className="logo" width="25%" />
+                    <img src={Logo} alt="Caring for Your Fertiliy" className="logo" width="25%" />
                     <a href="" className="menu_icon" id="menu_icon" onClick={this.toggleMenu}>
                         {null}
                     </a>
@@ -43,11 +43,11 @@ export default class Header extends Component {
                             {navComponents}
                         </ul>
                     </nav>
-                    <ul className="social">
-                        <li><a className="fb" href="/">{null}</a></li>
-                        {/* <li><a className="twitter" href="/">{null}</a></li>
+                    {/* <ul className="social"> */}
+                    {/* <li><a className="fb" href="/">{null}</a></li> */}
+                    {/* <li><a className="twitter" href="/">{null}</a></li>
                         <li><a className="gplus" href="/">{null}</a></li> */}
-                    </ul>
+                    {/* </ul> */}
                 </div>
             </header>
         );

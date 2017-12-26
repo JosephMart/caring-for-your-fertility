@@ -12,7 +12,8 @@ export default class CalendarEvent extends PureComponent {
             return (
                 <a className="event" href={event.link}>
                     <div className="event-desc">
-                        {event.shortDesc}
+                        {event.title}<br /><br />
+                        {event.location.name}
                     </div>
                     <div className="event-time">
                         {`${event.startTime} to ${event.endTime}`}

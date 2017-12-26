@@ -23,7 +23,6 @@ class Calendar extends Component {
 
     render() {
         const { calendar, monthEvents } = this.props;
-        console.log(monthEvents);
         return (
             <div id="calendar-wrap" className="wrapper">
                 <CalendarNav month={calendar.selectedMonth}

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Map } from '../Map';
 import PropTypes from 'prop-types';
+import moment from 'moment';
 
 class Event extends Component {
     static propTypes = {
@@ -10,11 +11,15 @@ class Event extends Component {
 
     render() {
         const { event } = this.props;
+        const { year, month, day } = this.props.match.params;
         return (
             <div>
                 <section id="event" className="cta">
                     <h3>{event.title}</h3>
                     <p>{`${event.startTime} to ${event.endTime}`}</p>
+                    <p>{moment(`${year}-${month}-${day}`).format('MMMM D, YYYY')}</p>
+                    <p>{event.location.name}</p>
+                    <p>{event.location.address}</p>
                     <p>{event.longDesc}</p>
                     <span className="cta_sep"></span>
                 </section>
