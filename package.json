@@ -1,6 +1,7 @@
 {
   "name": "caring-for-your-fertility",
   "version": "0.1.0",
+  "homepage": "http://caringforyourfertility.com",
   "private": true,
   "dependencies": {
     "babel-polyfill": "^6.26.0",

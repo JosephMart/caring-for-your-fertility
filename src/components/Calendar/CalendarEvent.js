@@ -1,5 +1,6 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 export default class CalendarEvent extends PureComponent {
     static propTypes = {
@@ -10,7 +11,7 @@ export default class CalendarEvent extends PureComponent {
         const { event } = this.props;
         if (event) {
             return (
-                <a className="event" href={event.link}>
+                <Link className="event" to={event.link}>
                     <div className="event-desc">
                         {event.title}<br /><br />
                         {event.location.name}
@@ -18,7 +19,7 @@ export default class CalendarEvent extends PureComponent {
                     <div className="event-time">
                         {`${event.startTime} to ${event.endTime}`}
                     </div>
-                </a>
+                </Link>
             );
         }
         return null;

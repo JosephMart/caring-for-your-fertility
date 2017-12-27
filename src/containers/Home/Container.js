@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { UpcomingEvent } from '../../components';
 import { connect } from 'react-redux';
 import { getUpcomingEvents } from '../../utils';
+import { Link } from 'react-router-dom';
 
 class Home extends Component {
     render() {
@@ -32,7 +33,7 @@ class Home extends Component {
                     or avoid a pregnancy. The System is based on the observation and tracking of
                     physical signs a woman has when she is fertile.
                 </p>
-                        <a href="/info">Learn More<span>→</span></a>
+                        <Link to="/info">Learn More<span>→</span></Link>
                     </div>
                 </section>
 
