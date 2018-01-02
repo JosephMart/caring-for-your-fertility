@@ -7,7 +7,7 @@ b, i,
 dl, dt, dd, ol,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure, 
+article, aside, canvas, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section, summary,
 time, mark, audio, video {
     margin:0;
@@ -37,7 +37,7 @@ img{
 }
 
 article,aside,details,figcaption,figure,
-footer,header,hgroup,menu,nav,section { 
+footer,header,hgroup,menu,nav,section {
     display:block;
 }
 
@@ -74,7 +74,7 @@ ins {
 /* change colours to suit your needs */
 mark {
     background-color:#ff9;
-    color:#000; 
+    color:#000;
     font-style:italic;
     font-weight:bold;
 }
@@ -97,7 +97,7 @@ table {
 hr {
     display:block;
     height:1px;
-    border:0;   
+    border:0;
     border-top:1px solid #cccccc;
     margin:1em 0;
     padding:0;
@@ -492,7 +492,7 @@ header ul.social li a.gplus{
     width: 50%;
     height: 405px;
     float: left;
-    background: url('img/info_img1.jpg') no-repeat;
+    background: url('img/info_img1.jpg') right no-repeat;
     opacity: 0.7;
 
     background-size: cover;
@@ -705,14 +705,14 @@ a{
         display: none;
     }
     header nav{
-        border-bottom-left-radius: 2px; 
-        -webkit-border-bottom-left-radius: 2px; 
-        -moz-border-bottom-left-radius: 2px; 
-        -o-border-bottom-left-radius: 2px; 
-        border-bottom-right-radius: 2px; 
-        -webkit-border-bottom-right-radius: 2px; 
-        -moz-border-bottom-right-radius: 2px; 
-        -o-border-bottom-right-radius: 2px; 
+        border-bottom-left-radius: 2px;
+        -webkit-border-bottom-left-radius: 2px;
+        -moz-border-bottom-left-radius: 2px;
+        -o-border-bottom-left-radius: 2px;
+        border-bottom-right-radius: 2px;
+        -webkit-border-bottom-right-radius: 2px;
+        -moz-border-bottom-right-radius: 2px;
+        -o-border-bottom-right-radius: 2px;
     }
     header nav.show_menu{
         display: block;
