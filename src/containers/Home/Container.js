@@ -13,6 +13,8 @@ class Home extends Component {
                         <div className="caption">
                             <p>Caring for your fertility</p>
                             <p>Pat Martinsen</p>
+                            <br />
+                            <Link to="/info">Learn More</Link>
                         </div>
                     </div>
                 </section>

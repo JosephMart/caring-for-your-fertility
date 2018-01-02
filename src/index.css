@@ -285,6 +285,35 @@ header ul.social li a.gplus{
     margin-top: 220px;
 }
 
+.billboard .caption a{
+  display: inline-block;
+  color: #000;
+  font-family: "avantgardelt-extralight", arial;
+  font-weight: lighter;
+  font-size: 23px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 2px;
+  margin-top: 2px;
+  text-transform: uppercase;
+  z-index: 8888;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  transition:all .2s linear;
+	-webkit-transition:all .2s linear;
+	-moz-transition:all .2s linear;
+	-o-transition:all .2s linear;
+}
+
+.billboard .caption a:hover{
+  color: #65bf95;
+  transition:all .2s linear;
+	-webkit-transition:all .2s linear;
+	-moz-transition:all .2s linear;
+	-o-transition:all .2s linear;
+}
+
 .billboard .caption p{
     display: inline-block;
     color: #000;
