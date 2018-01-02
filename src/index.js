@@ -37,7 +37,7 @@ const store = createStore(
 
 ReactDOM.render(
     <Provider store={store}>
-        <ConnectedRouter history={history}>
+        <ConnectedRouter onUpdate={() => window.scrollTo(0, 0)} history={history}>
             <div>
                 <Header />
                 {routeComponents}
