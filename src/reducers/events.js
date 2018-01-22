@@ -45,7 +45,70 @@ const INITIAL_STATE = {
         endTime: '8:30 PM',
         location: ST_LUKE_THE_EVANGELIST,
         link: 'event/2018/02/02'
-    }
+    },
+    '2018-03-09': {
+        title: 'Introductory Session',
+        shortDesc: '',
+        longDesc: '',
+        startTime: '6:30 PM',
+        endTime: '8:00 PM',
+        location: ST_ELIZABETH_ANN_SETON,
+        link: 'event/2018/03/09'
+    },
+    '2018-03-12': {
+        title: 'Sesión de Introducción',
+        shortDesc: '',
+        longDesc: '',
+        startTime: '6:30 PM',
+        endTime: '8:00 PM',
+        location: ST_VINCENT_DE_PAUL,
+        link: 'event/2018/03/12'
+    },
+    '2018-04-09': {
+        title: 'Sesión de Introducción',
+        shortDesc: '',
+        longDesc: '',
+        startTime: '6:30 PM',
+        endTime: '8:00 PM',
+        location: ST_VINCENT_DE_PAUL,
+        link: 'event/2018/04/09'
+    },
+    '2018-05-07': {
+        title: 'Sesión de Introducción',
+        shortDesc: '',
+        longDesc: '',
+        startTime: '6:30 PM',
+        endTime: '8:00 PM',
+        location: ST_VINCENT_DE_PAUL,
+        link: 'event/2018/05/07'
+    },
+    '2018-03-14': {
+        title: 'Introductory Session',
+        shortDesc: '',
+        longDesc: '',
+        startTime: '6:30 PM',
+        endTime: '8:00 PM',
+        location: HOLY_ROSARY,
+        link: 'event/2018/03/14'
+    },
+    '2018-04-11': {
+        title: 'Introductory Session',
+        shortDesc: '',
+        longDesc: '',
+        startTime: '6:30 PM',
+        endTime: '8:00 PM',
+        location: HOLY_ROSARY,
+        link: 'event/2018/04/11'
+    },
+    '2018-05-09': {
+        title: 'Introductory Session',
+        shortDesc: '',
+        longDesc: '',
+        startTime: '6:30 PM',
+        endTime: '8:00 PM',
+        location: HOLY_ROSARY,
+        link: 'event/2018/05/09'
+    },
 };
 
 const events = (state = INITIAL_STATE, action) => {
