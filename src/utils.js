@@ -80,3 +80,23 @@ export const parseDate = date => (
 export const pad = d => (
     (d < 10) ? '0' + d.toString() : d.toString()
 )
+
+/**
+ * Event utils
+ */
+
+export const getEventTitle = (language) => {
+    let title = '';
+
+    if (language.includes('eng')) {
+        title += 'Introductory Session';
+    }
+
+    if (language.includes('esl')) {
+        if (title !== '') {
+            title += '/';
+        }
+        title += 'Sesión de Introducción';
+    }
+    return title;
+}
