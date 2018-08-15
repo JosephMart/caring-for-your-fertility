@@ -1,5 +1,14 @@
+import React from 'react';
+
 export const CHANGE_MONTH = 'CHANGE_MONTH';
 export const GET_EVENTS_BY_MONTH = 'GET_EVENTS_BY_MONTH';
+export const CHANGE_LANGUAGE = 'CHANGE_LANGUAGE';
+
+export const ENGLISH = 'ENGLISH';
+export const SPANISH = 'SPANISH';
+
+export const FC = <b>Fertility<i>Care</i></b>;
+export const TM = <span>™</span>;
 
 export const ST_VINCENT_DE_PAUL = {
     name: 'St. Vincent de Paul',

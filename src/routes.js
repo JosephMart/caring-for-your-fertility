@@ -6,25 +6,36 @@ import { Calendar } from './containers/Calendar';
 import { Event } from './containers/Event';
 import { Info } from './containers/Info';
 
+import { ENGLISH, SPANISH } from './constants';
+
 const routes = [
     {
         path: '/',
         component: Home,
         navVisible: true,
-        navText: 'Home',
+        navText: {
+            [ENGLISH]: 'Home',
+            [SPANISH]: 'Casa',
+        },
         exact: true
     },
     {
         path: '/calendar',
         component: Calendar,
         navVisible: true,
-        navText: 'Calendar',
+        navText: {
+            [ENGLISH]: 'Calendar',
+            [SPANISH]: 'Calendario',
+        },
         exact: true
     },
     {
         path: '/info',
         component: Info,
-        navText: 'Info',
+        navText: {
+            [ENGLISH]: 'Info',
+            [SPANISH]: 'Información',
+        },
         navVisible: true,
         exact: true
     },
@@ -37,4 +48,4 @@ const routes = [
 ];
 
 export const routeComponents = routes.map(({ path, component, exact }, key) => <Route exact={exact} path={path} component={component} key={key} />);
-export const navComponents = routes.map(({ path, navVisible, navText }, key) => navVisible ? <li key={key}><Link to={path}>{navText}</Link></li> : null);
+export const navComponents = (lang) => routes.map(({ path, navVisible, navText }, key) => navVisible ? <li key={key}><Link to={path}>{navText[lang]}</Link></li> : null);

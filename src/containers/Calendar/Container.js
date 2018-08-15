@@ -40,6 +40,7 @@ const mapStateToProps = (state) => {
     const { calendar, events } = state;
     return {
         calendar,
+        language: state.language,
         monthEvents: getEventsByMonth(events, calendar.selectedYear, parseInt(calendar.currentMoment.format('MM'), 10))
     };
 }

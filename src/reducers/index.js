@@ -1,9 +1,11 @@
 import calendar from './calendar';
 import events from './events';
+import language from './language';
 
 const appReducers = {
     calendar,
-    events
+    events,
+    language,
 }
 
 export default appReducers

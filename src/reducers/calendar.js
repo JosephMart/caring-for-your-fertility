@@ -1,10 +1,11 @@
 import moment from 'moment';
-import { CHANGE_MONTH } from '../constants';
+import localization from 'moment/locale/es-us';
+import { CHANGE_MONTH, CHANGE_LANGUAGE } from '../constants';
 
 const now = moment(new Date());
 
 const INITIAL_STATE = {
-    currentMoment: now,
+    currentMoment: now.locale('en', localization),
     firstDayIndex: parseInt(now.startOf('month').format('d'), 10),
     daysInCurrentMonth: now.daysInMonth(),
     daysInPrevMonth: moment(now).subtract(1, 'months').daysInMonth(),
@@ -14,10 +15,11 @@ const INITIAL_STATE = {
 
 const calendar = (state = INITIAL_STATE, action) => {
     const { currentMoment } = state;
+
     switch (action.type) {
         case CHANGE_MONTH:
             currentMoment.add(action.incrementVal, 'months');
-            return Object.assign(...state, {
+            return Object.assign({}, ...state, {
                 currentMoment,
                 firstDayIndex: parseInt(currentMoment.startOf('month').format('d'), 10),
                 daysInCurrentMonth: currentMoment.daysInMonth(),
@@ -25,8 +27,12 @@ const calendar = (state = INITIAL_STATE, action) => {
                 selectedMonth: currentMoment.format('MMMM'),
                 selectedYear: parseInt(currentMoment.format('YYYY'), 10)
             });
+        case CHANGE_LANGUAGE:
+            console.log(action.type === CHANGE_LANGUAGE);
+            console.log(state);
+            return state;
         default:
-            return state
+            return state;
     }
 }
 
