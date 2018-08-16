@@ -28,8 +28,6 @@ const calendar = (state = INITIAL_STATE, action) => {
                 selectedYear: parseInt(currentMoment.format('YYYY'), 10)
             });
         case CHANGE_LANGUAGE:
-            console.log(action.type === CHANGE_LANGUAGE);
-            console.log(state);
             return state;
         default:
             return state;
